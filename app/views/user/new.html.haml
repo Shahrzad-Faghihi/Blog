@@ -1,0 +1,12 @@
+Follow the steps
+.steps
+  = form_for @user, :url => {:action => "create"} do |f|
+    = render "#{@user.current_step}", :f => f
+    .btn-actions
+      = f.submit "Back", class: "btn btn-back", name: "back_button" unless @user.first_step?
+      = f.submit "Continue", class: "btn btn-primary continue-button"
+ 
+    
+
+ 
+    

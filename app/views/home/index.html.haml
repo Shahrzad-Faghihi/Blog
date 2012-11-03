@@ -1,0 +1,59 @@
+=# stylesheet_link_tag 'application'
+%h1
+  Welcome to my blog
+.background
+.home
+  Home
+  %br
+  %br
+  #products
+    Products
+  %br
+  Login
+  %br
+  %br
+  Signup
+
+
+.home-page-content
+  #title
+    Here you can post your products
+    %br
+    %input{:type => "checkbox", :name => "add-products"} 
+      How to add products?
+      %ol#home-list{ style: "display:none" }
+        %li 
+          You should login
+        %li
+          Add your product (Title, Image, Description, Price)  
+  %br
+ 
+- content_for :javascript do
+  :javascript
+
+    jQuery(function($){   
+
+      $(document).ready(function(){ 
+
+       $("#products").hover(
+         function(){
+           $("#products").text("Clic here to see our products");
+         },
+         function() {
+           $("#products").text("products");
+         }
+ 
+      );
+
+
+
+        $("input[name=add-products]").change(function() {
+          var checked = $("input[name=add-products]").is(":checked");
+          checked == true ? $("#home-list").show() : $("#home-list").hide();
+  
+        }); 
+
+      });
+    });
+  
+     

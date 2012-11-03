@@ -1,0 +1,53 @@
+// Place all the styles related to the user controller here.
+// They will automatically be included in application.css.
+// You can use Sass here: http://sass-lang.com/
+@import "compass_twitter_bootstrap";
+
+.form-horizontal {
+	padding-top: 50px;
+
+	.control-group {
+
+	    .control-label {
+		   color: white;
+		   font-size: 1.4em;
+		   float: left; 
+		   width: 200px;
+	       padding-top: 0px;
+	       padding-left: 50px;
+	       padding-right: 30px;
+	    }
+
+	    .controls {
+
+	    }
+	}
+
+}
+
+.continue-button {
+	margin-left: 400px;
+}
+
+.btn-actions {
+	background-color: lightgrey;
+	width: 529px;
+	height: 50px;
+	margin-left: 80px;
+
+	.btn {
+		margin-top: 10px;
+		margin-left: 10px;
+		
+	}
+	.continue-button {
+        margin-left: 300px;
+	}
+
+	.btn-back {
+	   // margin-left: 10px;
+	}
+
+}
+
+
