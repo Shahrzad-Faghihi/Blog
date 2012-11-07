@@ -5,7 +5,7 @@ gem 'rails', '3.2.8'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'mysql2'
+gem 'mysql2', '0.3.11'
 gem "paperclip", "2.3.16"
 gem 'haml'
 gem 'sass'
@@ -22,8 +22,9 @@ gem 'jquery_datepicker'
 
 # Gems used only for assets and not required
 # in production environments by default.
+gem 'sass-rails', '>=3.1.0.rc.4'
 group :assets do
-  gem 'sass-rails',   '~> 3.2.3'
+  #gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
@@ -44,9 +45,9 @@ gem 'jquery-rails'
 # gem 'unicorn'
 
 # Deploy with Capistrano
-# gem 'capistrano'
+ gem 'capistrano'
 
 # To use debugger
 # gem 'debugger'
 
-
+gem 'multi_json', '1.3.6'
