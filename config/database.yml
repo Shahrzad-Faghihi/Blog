@@ -22,7 +22,7 @@ test:
   socket: /tmp/mysql.sock
 
 production:
-  adapter: mysql2
+  adapter: postgres
   encoding: utf8
   reconnect: false
   database: shahrzad_blog_production
